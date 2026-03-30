@@ -1,0 +1,422 @@
+/* =========================
+   🎯 GLOBAL STYLES
+========================= */
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  background-color: #F5F5DC; /* Cream White */
+  color: #333;
+}
+
+/* =========================
+   🧭 NAVBAR
+========================= */
+
+nav {
+  background-color: #5C4033; /* Deep Brown */
+  padding: 15px 40px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: white;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav a:hover {
+  color: #DAA520; /* Gold */
+}
+
+/* =========================
+   🏹 HEADINGS
+========================= */
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #228B22; /* Forest Green */
+}
+
+/* =========================
+   📦 SECTIONS
+========================= */
+
+section {
+  padding: 60px 80px;
+}
+
+/* =========================
+   🧱 CARDS
+========================= */
+
+div {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+/* =========================
+   🔘 BUTTONS (CTA)
+========================= */
+
+button {
+  background-color: #DAA520; /* Gold */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #c4941c;
+}
+
+/* =========================
+   📊 TABLE
+========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th {
+  background-color: #228B22;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* =========================
+   📞 FOOTER
+========================= */
+
+ /* footer {
+  background-color: #5C4033; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+}     
+   */
+
+/* =========================
+   📝 FORMS
+========================= */
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* =========================
+   🧑‍🏫 INSTRUCTORS (CARDS GRID)
+========================= */
+
+.instructors {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.instructor-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* =========================
+   🖼 HERO SECTION
+========================= */
+
+.hero {
+  background: url('images/hero.jpg') no-repeat center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  color: white;
+}
+
+/* =========================
+   🖼 ABOUT IMAGE SECTION
+========================= */
+
+.about-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* LOGO */
+.logo img {
+  height: 80px;
+}
+
+
+/* footer */
+footer {
+  background-color: #5C4033; /* Deep Brown */
+  color: black;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 80px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+/* makes full height layout */
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flex container */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Main content grows */
+main {
+  flex: 1;
+}
+
+
+/* instructors */
+.instructor-card {
+  text-align: center;
+  width: 250px;
+}
+
+/* 🔥 THIS MAKES IMAGE CIRCULAR */
+.instructor-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;   /* 👈 circle magic */
+  object-fit: cover;    /* keeps image nicely cropped */
+  margin-bottom: 10px;
+  border: 3px solid #228B22; /* optional nice border */
+}
+
+/* move nav bar to right and log to left */
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:first-child {
+  margin-right: auto; /* pushes everything else right */
+}
+
+/* spread the footer image */
+.footer-logo {
+  width: 60%;   /* increase this (try 50%–70%) */
+}
+
+img {max-width: 100%; height: auto;}
+
+/* skip link    */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  background: #DAA520; /* Gold */
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+/* Show when focused */
+.skip-link:focus {
+  top: 10px;
+}
+
+/* responsiveness */
+
+/* for mobile device */
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* HERO TEXT */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 30px 20px;
+  }
+
+  /* CARDS STACK */
+  .card-container,
+  .instructors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* INDIVIDUAL CARD */
+  .instructor-card,
+  .card {
+    width: 90%;
+  }
+
+  /* TABLE SCROLL */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* FOOTER STACK */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-logo,
+  .footer-info {
+    width: 100%;
+  }
+
+  /* FORM */
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+
+  /* NAVBAR STACK */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* HERO TEXT */
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 30px 20px;
+  }
+
+  /* CARDS STACK */
+  .card-container,
+  .instructors {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* INDIVIDUAL CARD */
+  .instructor-card,
+  .card {
+    width: 90%;
+  }
+
+  /* TABLE SCROLL */
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  /* FOOTER STACK */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-logo,
+  .footer-info {
+    width: 100%;
+  }
+
+  /* FORM */
+  form {
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+
