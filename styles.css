@@ -1,6 +1,4 @@
-/* =========================
-   🎯 GLOBAL STYLES
-========================= */
+/* ======================== */
 
 body {
   margin: 0;
@@ -9,9 +7,7 @@ body {
   color: #333;
 }
 
-/* =========================
-   🧭 NAVBAR
-========================= */
+/* ========================*/
 
 nav {
   background-color: #5C4033; /* Deep Brown */
@@ -42,26 +38,20 @@ nav a:hover {
   color: #DAA520; /* Gold */
 }
 
-/* =========================
-   🏹 HEADINGS
-========================= */
+/* ======================== */
 
 h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
   color: #228B22; /* Forest Green */
 }
 
-/* =========================
-   📦 SECTIONS
-========================= */
+/* ======================== */
 
 section {
   padding: 60px 80px;
 }
 
-/* =========================
-   🧱 CARDS
-========================= */
+/* ======================= */
 
 div {
   background-color: white;
@@ -71,9 +61,7 @@ div {
   border-radius: 8px;
 }
 
-/* =========================
-   🔘 BUTTONS (CTA)
-========================= */
+/* =======================*/
 
 button {
   background-color: #DAA520; /* Gold */
@@ -90,9 +78,7 @@ button:hover {
   background-color: #c4941c;
 }
 
-/* =========================
-   📊 TABLE
-========================= */
+/* ======================= */
 
 table {
   width: 100%;
@@ -111,9 +97,7 @@ td, th {
   text-align: center;
 }
 
-/* =========================
-   📞 FOOTER
-========================= */
+/* ====================== */
 
  /* footer {
   background-color: #5C4033; 
@@ -123,9 +107,7 @@ td, th {
 }     
    */
 
-/* =========================
-   📝 FORMS
-========================= */
+/* ====================== */
 
 form {
   max-width: 500px;
@@ -140,9 +122,7 @@ input, select, textarea {
   border-radius: 5px;
 }
 
-/* =========================
-   🧑‍🏫 INSTRUCTORS (CARDS GRID)
-========================= */
+/* ====================== */
 
 .instructors {
   display: flex;
@@ -155,9 +135,7 @@ input, select, textarea {
   border-radius: 5px;
 }
 
-/* =========================
-   🖼 HERO SECTION
-========================= */
+/* ====================== */
 
 .hero {
   background: url('images/hero.jpg') no-repeat center/cover;
@@ -170,9 +148,7 @@ input, select, textarea {
   color: white;
 }
 
-/* =========================
-   🖼 ABOUT IMAGE SECTION
-========================= */
+/* ===================== */
 
 .about-img {
   width: 100%;
@@ -239,10 +215,10 @@ main {
 .instructor-card img {
   width: 120px;
   height: 120px;
-  border-radius: 50%;   /* 👈 circle magic */
-  object-fit: cover;    /* keeps image nicely cropped */
+  border-radius: 50%;   
+  object-fit: cover;    
   margin-bottom: 10px;
-  border: 3px solid #228B22; /* optional nice border */
+  border: 3px solid #228B22; 
 }
 
 /* move nav bar to right and log to left */
@@ -252,12 +228,12 @@ nav ul {
 }
 
 nav ul li:first-child {
-  margin-right: auto; /* pushes everything else right */
+  margin-right: auto; 
 }
 
 /* spread the footer image */
 .footer-logo {
-  width: 60%;   /* increase this (try 50%–70%) */
+  width: 60%; /
 }
 
 img {max-width: 100%; height: auto;}
